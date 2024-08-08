@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,15 +14,15 @@
             
         </div>
         <div class="hidden min-[920px]:flex md:gap-5">
-            <a href="">Home</a>
-            <a href="">How  It Works?</a>
-            <a href="">About</a>
-            <a href="">Testimonials</a>
-            <a href="">Contact Us</a>
+            <a href="#home" class="hover:bold hover:scale-110  duration-150">Home</a>
+            <a href="#howItworks" class="hover:bold hover:scale-110 duration-150">How  It Works?</a>
+            <a href="#about" class="hover:bold hover:scale-110 duration-150">About</a>
+            <a href="#testimonials" class="hover:bold hover:scale-110 duration-150">Testimonials</a>
+            <a href="#contact" class="hover:bold hover:scale-110 duration-150">Contact Us</a>
         </div>
 
     </header>
-    <section class=" relative bg-black flex sm:justify-between sm:flex-row flex-col -z-10 max-w-full gap-6">
+    <section id="home" class=" relative bg-black flex sm:justify-between sm:flex-row flex-col -z-10 max-w-full gap-6">
         <div class="flex flex-col  justify-center ml-10 sm:ml-16 text-4xl lg:ml-20  sm:text-6xl md:text-7xl lg:text-8xl min-h-[40vh] ">
             <p >The</p>
             <p >Shoe</p>
@@ -34,7 +34,7 @@
 
     
     <section class="m-auto max-w-[90%] w-full mt-8  ">
-    <div class="  text-[16px] sm:text-2xl md:text-3xl sm:w-2/4 text-center mx-auto mb-12">
+    <div id="howItworks" class="  text-[16px] sm:text-2xl md:text-3xl sm:w-2/4 text-center mx-auto mb-12">
             <p>Have they finally made the </p>
             <p>perfect workout shoe?</p>
            </div>
@@ -75,41 +75,58 @@
 
     <!-- about us -->
 
-     <section class="mt-12 ">
+     <section class="mt-12  ">
          
-         <div class="h-[100%] flex justify-center  items-center flex-col sm:flex-row">
+         <div id="about" class="h-[100%] flex justify-center  items-center flex-col sm:flex-row">
             <img class="hidden sm:block m-auto w-[50vw] " src="./images/Group 14.svg" alt="">
             <img class="sm:hidden m-auto" src="./images/Group 15.png" alt="">
             <div class="sm:px-[3%] text-[12px] lg:text-[15px] md-text-[14px] sm:text-[12px] text-justify max-[490px]:px-4">
                 <h1 class="text-3xl text-center">About us</h1>
-                <p>For each one of those shoe sweethearts out there, THE SHOE COMPANY offer the one-stop goal to pick the correct match of footwear. </p> <br>
-                <p>Gone are the days when you needed to go from store to store to locate the correct style and size for yourself.</p> <br>
+                <p class="">For each one of those shoe sweethearts out there, THE SHOE COMPANY offer the one-stop goal to pick the correct match of footwear. </p> <br>
+                <p class="hidden sm:block">Gone are the days when you needed to go from store to store to locate the correct style and size for yourself.</p> <br>
                 <p>At THE SHOE COMPANY,  you can locate a vast accumulation of dashing footwear in all sizes and styles, all inside a couple of snaps.</p> <br>
-                <p>Simple right? Not just we are here to spare your time, we are putting forth you the most dazzling footwear alternatives from all the first-rate brands like DAVINCHI, PRINCESS, and SIGNATURE. At ‘Organization Name’, we offer men, ladies, and child’s shoes perfect for any and each event.</p>
+                <p class="hidden sm:block">Simple right? Not just we are here to spare your time, we are putting forth you the most dazzling footwear alternatives from all the first-rate brands like DAVINCHI, PRINCESS, and SIGNATURE. At 'Organization Name', we offer men, ladies, and child's shoes perfect for any and each event.</p>
             </div>
          </div>
      </section>
 
      <!-- what people are saying //  review -->
-
-     <section class="relative  h-[500px] max-w-[1440]  ">
+     <section id="testimonials" class="bg-[url('/images/background.png')] bg-cover sm:bg-contain   max-w-[1440]  ">
         
-        <p>What People are saying about THE SHOE COMPANY ?</p>
-        <div>
-            <div>
-                <img src="./images/Group 5.png" alt="">
+        <p class="text-2xl sm:text-4xl bold text-center py-[50px] sm:py-[100px] w-[80%] sm:w-[40%] m-auto ">What People are saying about THE SHOE COMPANY ?</p>
+        <div class=" flex flex-col items-center gap-7 sm:gap-0 sm:flex-row  sm:justify-evenly text-center">
+            <div class="w-[60%] sm:w-[20%]">
+                <img class="max-w-32 m-auto sm:max-w-64 w-full" src="./images/Group 5.png" alt="">
                 <p>“Looking for shoes that are built just for you? THE SHOE COMPANY is the way to go. Love the design and build quality.”</p>
             </div>
-            <div>
-                <img src="./images/Group 5.png" alt="">
+            <div class="w-[60%]  sm:w-[20%]">
+                <img class="max-w-32 m-auto sm:max-w-64 w-full" src="./images/Group 4.png" alt="">
                 <p>“I love the shoes, the quality, and everyting. They are worth the investment!”</p>
             </div>
-            <div>
-                <img src="./images/Mask group.png" alt="">
+            <div class="w-[60%] sm:w-[20%]">
+                <img class="max-w-32 m-auto sm:max-w-64 w-full" src="./images/Mask group.png" alt="">
                 <p>“They make the best and forever lasting shoes. Superb fit and confort is literally the next level. Much recommended!”</p>
             </div>
         </div>
 
+     </section>
+
+     <!-- contact section -->
+
+     <section id="contact" class="max-w-[1440px] sm:justify-center sm:flex sm:p-[50px] ">
+        <div class="flex sm:justify-center items-center  sm:w-[40%] py-[40px] sm:py-0 ">
+            <div>
+            <p class="text-3xl bold">Contact Us</p> <br>
+            <p>4<sup>th</sup> street, XYZ</p>
+            <p >+1023456789</p>
+            <div class="flex pt-[20px] gap-3">
+                <img class="h-[30px] hover:cursor-pointer hover:scale-110 hover:shadow-sm hover:shadow-white" src="./images/facebook.png" alt="">
+                <img class="h-[30px] hover:cursor-pointer hover:scale-110 hover:shadow-sm hover:shadow-white" src="./images/instagram.png" alt="">
+                <img class="h-[30px] hover:cursor-pointer hover:scale-110 hover:shadow-sm hover:shadow-white" src="./images/twitch.png" alt="">
+                <img class="h-[30px] hover:cursor-pointer hover:scale-110 hover:shadow-sm hover:shadow-white" src="./images/youtube.png" alt="">
+            </div>
+        </div></div>
+        <img class="sm:w-[40%]" src="./images/Google-Maps 1.png" alt="">
      </section>
     
     
